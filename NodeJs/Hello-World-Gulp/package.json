@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-gulp",
+  "version": "1.0.0",
+  "description": "Projeto exemplo de Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coisa de Programador",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jsdoc": "^0.1.4"
+  }
+}
