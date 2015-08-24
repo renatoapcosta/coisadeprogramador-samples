@@ -1,0 +1,20 @@
+{
+  "name": "Bower-Hello-World",
+  "version": "0.0.0",
+  "homepage": "https://github.com/williampsena/coisadeprogramador-samples",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "1.4.3"
+  }
+}
