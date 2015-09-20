@@ -1,0 +1,27 @@
+    <section class="suite">
+      <h1>Testing async</h1>
+      <dl>
+        <dt>...get google page</dt>
+        <dd><pre><code>http.get('http://www.google.com/index.html', function(res){
+	done();
+}).on('error', function(e){
+	assert.fail(e);
+})</code></pre></dd>
+      </dl>
+    </section>
+    <section class="suite">
+      <h1>Testing convert</h1>
+      <dl>
+        <dt>...toInt success</dt>
+        <dd><pre><code>var input = '1';
+var inputNumber = convert.toInt(input) || undefined;
+
+assert.notEqual(inputNumber, undefined, 'Ohhh no Error!');</code></pre></dd>
+        <dt class="error">...toInt fail</dt>
+        <dd class="error"><pre><code>var input = 'abc';
+var inputNumber = convert.toInt(input) || undefined;
+
+assert.notEqual(inputNumber, undefined, 'Ohhh no Error!');</code></pre></dd>
+        <dd class="error">AssertionError: Ohhh no Error!</dd>
+      </dl>
+    </section>
